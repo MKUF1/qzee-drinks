@@ -1155,29 +1155,3 @@ h3 {
   .mini-bottle {
     left: 15%;
   }
-}
-/* This applies only to screens smaller than 768px (Mobile/Tablets) */
-@media (max-width: 768px) {
-  .site-bg {
-    background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
-      url('assets/mobile-bg.jpg'); /* Replace with your image path */
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll; /* Scroll is better for mobile performance */
-    
-    /* Optional: subtle blur to keep the text as the hero */
-    backdrop-filter: blur(2px);
-  }
-
-  /* Ensuring the content stands out against the background */
-  .hero-copy {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-  }
-}
