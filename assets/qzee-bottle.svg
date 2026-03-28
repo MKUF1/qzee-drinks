@@ -1,0 +1,59 @@
+<svg width="420" height="980" viewBox="0 0 420 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bottleGlass" x1="210" y1="138" x2="210" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFFF8" stop-opacity="0.95"/>
+      <stop offset="0.38" stop-color="#F7FFE8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#DDE8D3" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="juiceFill" x1="210" y1="190" x2="210" y2="934" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FFF6" stop-opacity="0.92"/>
+      <stop offset="0.78" stop-color="#F0F6DA" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#D8E8C0" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="capDark" x1="210" y1="18" x2="210" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22282B"/>
+      <stop offset="1" stop-color="#080A0B"/>
+    </linearGradient>
+    <linearGradient id="labelBlue" x1="208" y1="286" x2="208" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DD2FF"/>
+      <stop offset="1" stop-color="#B9F1FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="coconutFruit" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211 741) rotate(90) scale(95 92)">
+      <stop stop-color="#AEE73F"/>
+      <stop offset="1" stop-color="#5FB41B"/>
+    </radialGradient>
+    <filter id="bottleShadow" x="15" y="0" width="390" height="980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="34" stdDeviation="22" flood-color="#2B6B84" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#bottleShadow)">
+    <rect x="120" y="18" width="180" height="110" rx="34" fill="url(#capDark)"/>
+    <path d="M160 111C166 77 178 63 210 63C242 63 254 77 260 111V170H160V111Z" fill="#CEE6F4" fill-opacity="0.45"/>
+    <path d="M84 166C84 121 121 84 166 84H254C299 84 336 121 336 166V850C336 895 299 932 254 932H166C121 932 84 895 84 850V166Z" fill="url(#bottleGlass)"/>
+    <path d="M92 184C92 142 126 108 168 108H252C294 108 328 142 328 184V842C328 884 294 918 252 918H168C126 918 92 884 92 842V184Z" fill="url(#juiceFill)"/>
+    <path d="M109 248C109 226 127 208 149 208H271C293 208 311 226 311 248V807C311 829 293 847 271 847H149C127 847 109 829 109 807V248Z" fill="#FFFDEA"/>
+    <path d="M117 221C171 179 251 182 304 220V259H117V221Z" fill="url(#labelBlue)"/>
+    <path d="M116 793C162 846 259 844 305 792V829C305 840 296 849 285 849H136C125 849 116 840 116 829V793Z" fill="url(#labelBlue)"/>
+    <path d="M118 267C117 249 123 238 134 231C162 214 236 213 287 226C296 228 303 236 304 247V272H118V267Z" fill="#F8FFFF" fill-opacity="0.75"/>
+    <path d="M117 818C164 833 256 834 304 818" stroke="#A7E5FF" stroke-width="10" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M116 255C132 235 151 224 173 220" stroke="#71D4FF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M304 255C288 235 269 224 247 220" stroke="#71D4FF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.7"/>
+    <rect x="123" y="285" width="174" height="106" rx="12" fill="#F6FBFF"/>
+    <path d="M139 334C139 297 167 272 205 272C221 272 235 277 246 286C251 291 252 297 249 302C245 308 238 308 232 304C224 298 216 296 207 296C186 296 170 312 170 333C170 354 186 370 207 370C223 370 235 363 244 351C248 346 254 344 260 347C267 351 269 358 266 365C253 389 232 402 204 402C166 402 139 372 139 334Z" fill="#F88E20"/>
+    <circle cx="205" cy="334" r="30" fill="#F7D542"/>
+    <path d="M194 314C203 306 216 307 224 313C211 319 199 328 191 341C185 331 186 321 194 314Z" fill="#71BC11"/>
+    <path d="M211 321H289V369H211" fill="#512091"/>
+    <path d="M213 321H289V369H213" fill="#512091"/>
+    <path d="M228 340C228 325 240 315 255 315C270 315 281 325 281 340C281 355 270 365 255 365C240 365 228 355 228 340ZM243 339C243 346 248 351 255 351C262 351 266 346 266 339C266 333 262 328 255 328C248 328 243 333 243 339Z" fill="white"/>
+    <path d="M180 339C180 326 190 316 203 316C216 316 226 326 226 339C226 352 216 362 203 362C190 362 180 352 180 339ZM194 339C194 345 198 349 203 349C209 349 213 345 213 339C213 334 209 329 203 329C198 329 194 334 194 339Z" fill="white"/>
+    <path d="M141 339C141 326 151 316 164 316C177 316 187 326 187 339C187 352 177 362 164 362C151 362 141 352 141 339ZM155 339C155 345 159 349 164 349C170 349 174 345 174 339C174 334 170 329 164 329C159 329 155 334 155 339Z" fill="white"/>
+    <path d="M156 464H260" stroke="#16366F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M141 511H276" stroke="#16366F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M149 584C172 566 201 561 222 566C248 572 267 590 277 621C248 605 222 606 191 618C179 622 164 620 152 614C141 607 138 596 149 584Z" fill="url(#coconutFruit)"/>
+    <path d="M205 582C213 565 228 556 245 557" stroke="#8F6C24" stroke-width="8" stroke-linecap="round"/>
+    <path d="M245 558C255 563 261 571 262 582" stroke="#5E991C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M131 745C163 716 250 717 288 744" stroke="#7AD9FF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.85"/>
+    <path d="M147 770C177 750 239 750 272 771" stroke="#7AD9FF" stroke-width="7" stroke-linecap="round" stroke-opacity="0.7"/>
+  </g>
+</svg>
