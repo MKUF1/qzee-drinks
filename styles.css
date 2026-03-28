@@ -265,6 +265,10 @@ main {
   justify-items: center;
 }
 
+.hero-copy {
+  position: relative;
+}
+
 .eyebrow,
 .feature-number,
 .stars {
@@ -1089,15 +1093,34 @@ h3 {
   .section-intro h2,
   .about-banner h2 {
     max-width: none;
-    font-size: clamp(2.8rem, 12vw, 4.3rem);
+    font-size: clamp(2.2rem, 8.6vw, 3.15rem);
   }
 
   .hero-art {
-    min-height: 470px;
+    display: none;
   }
 
   .hero-backdrop {
     border-radius: 30px;
+  }
+
+  .hero-copy {
+    padding: 34px 22px 28px;
+    border-radius: 30px;
+    background:
+      radial-gradient(circle at top right, rgba(255, 215, 118, 0.34), transparent 28%),
+      radial-gradient(circle at left center, rgba(122, 216, 238, 0.2), transparent 34%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 252, 246, 0.88));
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .hero-copy h1 {
+    max-width: 13ch;
+  }
+
+  .hero-text {
+    max-width: 30ch;
   }
 
   .hero-bottle-wrap {
