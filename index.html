@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qzee Drinks | Natural Taste, Bottled Beautifully</title>
+    <title>Qzee Drinks | Fresh, Fun, Full of Fruit</title>
     <meta
       name="description"
-      content="Qzee Drinks blends organic fruits, natural taste, and premium presentation into a fresh 4-page juice brand website."
+      content="Qzee Drinks brings colorful natural juice energy with organic fruits, best sellers, reviews, and bright product showcases."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
-    <div class="page-noise"></div>
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="index.html" aria-label="Qzee Drinks home">
@@ -32,222 +31,152 @@
 
         <nav class="site-nav">
           <a class="active" href="index.html">Home</a>
-          <a href="about.html">About Us</a>
+          <a href="about.html">About</a>
           <a href="products.html">Products</a>
           <a href="contact.html">Contact</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero-home hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Organic fruit. Modern refreshment.</p>
-            <h1>Nature made premium for people who can taste the difference.</h1>
-            <p class="hero-body">
-              Qzee Drinks is crafted around the finest organic fruits, clean natural taste, and a
-              polished fruit-first experience that feels fresh before the bottle is even opened.
+        <section class="hero hero-home reveal" data-parallax-area>
+          <div class="fruit-deco deco-lime"></div>
+          <div class="fruit-deco deco-orange"></div>
+          <div class="fruit-deco deco-berry"></div>
+          <div class="fruit-deco deco-mint"></div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Natural taste. Bright energy.</p>
+            <h1>Fresh fruit fun in every colorful sip.</h1>
+            <p class="hero-text">
+              Organic fruit taste, eye-catching bottles, and bright refreshing vibes made for every day.
             </p>
-            <div class="mobile-hero-bottles" aria-label="Qzee bottle display">
-              <div class="mobile-bottle-card">
-                <img
-                  class="mobile-bottle bottle-left"
-                  src="assets/qzee-bottle.jpg"
-                  alt="Qzee juice bottle"
-                />
-                <img
-                  class="mobile-bottle bottle-right"
-                  src="assets/qzee-bottle.jpg"
-                  alt="Qzee juice bottle"
-                />
-              </div>
-            </div>
             <div class="hero-actions">
-              <a class="button button-primary" href="products.html">See Our Juices</a>
-              <a class="button button-secondary" href="about.html">Our Story</a>
-            </div>
-            <div class="hero-metrics">
-              <article>
-                <strong data-counter="13">13</strong>
-                <span>featured juices</span>
-              </article>
-              <article>
-                <strong data-counter="3">3</strong>
-                <span>best-selling favorites</span>
-              </article>
-              <article>
-                <strong data-counter="100">100</strong>
-                <span>organic fruit direction</span>
-              </article>
+              <a class="button button-primary" href="products.html">See Products</a>
+              <a class="button button-secondary" href="contact.html">Contact Us</a>
             </div>
           </div>
 
-          <div class="hero-stage reveal" data-parallax-area>
-            <div class="stage-panel stage-panel-back"></div>
-            <div class="stage-panel stage-panel-front"></div>
-            <div class="hero-note note-top">
-              <span>Organic identity</span>
-              <strong>Natural taste with premium attitude.</strong>
+          <div class="hero-art">
+            <div class="hero-logo-badge">
+              <img src="assets/qzee-logo.jpg" alt="Qzee logo badge" />
             </div>
-            <div class="hero-note note-bottom">
-              <span>Signature bottle</span>
-              <strong>Tender Drop leads with a cool, clean finish.</strong>
-            </div>
-            <div class="fruit-mark lime-ring"></div>
-            <div class="fruit-mark peach-ring"></div>
-            <div class="leaf-mark leaf-left"></div>
-            <div class="leaf-mark leaf-right"></div>
-            <div class="bottle-stage" data-follow-target>
-              <img src="assets/qzee-bottle.jpg" alt="Qzee tender drop bottle" />
+            <div class="hero-bottle-pair" data-follow-target>
+              <img class="hero-bottle bottle-left" src="assets/qzee-bottle.jpg" alt="Qzee juice bottle" />
+              <img class="hero-bottle bottle-right" src="assets/qzee-bottle.jpg" alt="Qzee juice bottle" />
             </div>
           </div>
         </section>
 
-        <section class="ticker-band reveal">
-          <p>Organic fruits</p>
-          <p>Natural taste</p>
-          <p>Fresh design</p>
-          <p>Mint Lime</p>
-          <p>Lime Twist</p>
-          <p>Tender Coconut</p>
+        <section class="section reveal">
+          <div class="section-title centered">
+            <p class="eyebrow">13 juices</p>
+            <h2>Colorful boxes packed with fruit energy.</h2>
+          </div>
+
+          <div class="juice-grid">
+            <article class="juice-card" style="--juice:#dff45d;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Tender Coconut bottle" />
+              <h3>Tender Coconut</h3>
+            </article>
+            <article class="juice-card" style="--juice:#b7f58a;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Mint Lime bottle" />
+              <h3>Mint Lime</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffe173;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Lime Twist bottle" />
+              <h3>Lime Twist</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffbf71;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Mango Splash bottle" />
+              <h3>Mango Splash</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffa88b;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Orange Burst bottle" />
+              <h3>Orange Burst</h3>
+            </article>
+            <article class="juice-card" style="--juice:#f9a7cb;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Berry Chill bottle" />
+              <h3>Berry Chill</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffe89a;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Pineapple Pop bottle" />
+              <h3>Pineapple Pop</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffd0b0;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Peach Glow bottle" />
+              <h3>Peach Glow</h3>
+            </article>
+            <article class="juice-card" style="--juice:#c7f18e;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Green Fresh bottle" />
+              <h3>Green Fresh</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffe288;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Passion Sun bottle" />
+              <h3>Passion Sun</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffd19a;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Papaya Gold bottle" />
+              <h3>Papaya Gold</h3>
+            </article>
+            <article class="juice-card" style="--juice:#bfe5ff;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Blue Chill bottle" />
+              <h3>Blue Chill</h3>
+            </article>
+            <article class="juice-card" style="--juice:#ffc977;">
+              <img class="juice-bottle" src="assets/qzee-bottle.jpg" alt="Tropic Blend bottle" />
+              <h3>Tropic Blend</h3>
+            </article>
+          </div>
         </section>
 
-        <section class="content-block reveal">
-          <div class="section-head section-head-center">
-            <p class="eyebrow">Why customers trust Qzee</p>
-            <h2>The brand feels cleaner, calmer, and more real than regular juice shelves.</h2>
+        <section class="section reveal">
+          <div class="section-title centered">
+            <p class="eyebrow">Reviews</p>
+            <h2>People love the bright refreshing taste.</h2>
           </div>
 
-          <div class="trust-layout">
-            <article class="trust-card trust-feature">
-              <span class="mini-label">01</span>
-              <h3>Organic fruits are the starting point</h3>
-              <p>
-                Qzee is introduced through ingredient quality first, so the taste story feels
-                honest instead of overly processed.
-              </p>
-            </article>
-            <article class="trust-card">
-              <span class="mini-label">02</span>
-              <h3>Natural taste stays at the center</h3>
-              <p>
-                The flavor direction is light, refreshing, and fruit-forward so people remember the
-                freshness, not artificial sweetness.
-              </p>
-            </article>
-            <article class="trust-card">
-              <span class="mini-label">03</span>
-              <h3>Premium presentation creates confidence</h3>
-              <p>
-                Bottle, branding, messaging, and experience all work together to make Qzee feel
-                reliable and modern.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-block reveal">
-          <div class="split-heading">
-            <div>
-              <p class="eyebrow">Customer reviews</p>
-              <h2>Real reactions centered around freshness.</h2>
-            </div>
-            <p>
-              The strongest feedback keeps coming back to the same idea: Qzee tastes clean, feels
-              premium, and leaves a naturally refreshing impression.
-            </p>
-          </div>
-
-          <div class="review-ribbon">
-            <article class="review-panel">
+          <div class="review-grid">
+            <article class="review-card color-a">
               <span class="stars">★★★★★</span>
-              <p>
-                "Mint Lime is the one I recommend first. It feels bright, crisp, and naturally
-                cooling without being too much."
-              </p>
-              <strong>Ameen R.</strong>
+              <p>Mint Lime is super cool, fresh, and fun.</p>
+              <strong>Arif</strong>
             </article>
-            <article class="review-panel accent">
+            <article class="review-card color-b">
               <span class="stars">★★★★★</span>
-              <p>
-                "Lime Twist tastes strong in the best way. Fresh citrus, premium vibe, and a really
-                smooth finish."
-              </p>
-              <strong>Shaza F.</strong>
+              <p>Lime Twist has the best citrus kick and feels premium.</p>
+              <strong>Fathima</strong>
             </article>
-            <article class="review-panel">
+            <article class="review-card color-c">
               <span class="stars">★★★★★</span>
-              <p>
-                "Tender coconut feels so clean and calming. Qzee honestly feels different from the
-                usual juice brands."
-              </p>
-              <strong>Hisham K.</strong>
+              <p>Tender Coconut feels smooth, light, and very natural.</p>
+              <strong>Hiba</strong>
             </article>
           </div>
         </section>
 
-        <section class="content-block reveal">
-          <div class="section-head section-head-center">
-            <p class="eyebrow">Why choose us</p>
-            <h2>A better flow for customers, from first glance to final sip.</h2>
-          </div>
-
-          <div class="reasons-grid">
-            <article class="reason-card">
-              <strong data-counter="13">13</strong>
-              <span>signature juices that make the menu feel varied and brand-ready</span>
-            </article>
-            <article class="reason-card">
-              <strong data-counter="3">3</strong>
-              <span>top favorites driving word-of-mouth: Mint Lime, Lime Twist, Tender Coconut</span>
-            </article>
-            <article class="reason-card">
-              <strong data-counter="100">100</strong>
-              <span>fruit-first message centered around organic ingredients and natural taste</span>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-block reveal">
-          <div class="section-head section-head-center">
+        <section class="section reveal">
+          <div class="section-title centered">
             <p class="eyebrow">FAQs</p>
-            <h2>Everything customers usually want to know first.</h2>
+            <h2>Quick answers for curious customers.</h2>
           </div>
 
           <div class="faq-stack">
             <article class="faq-item active">
-              <button class="faq-question" type="button">What makes Qzee different from ordinary juice brands?</button>
+              <button class="faq-question" type="button">What makes Qzee different?</button>
               <div class="faq-answer">
-                <p>
-                  Qzee is positioned around organic fruits, natural taste, and premium presentation
-                  rather than a loud, overly artificial product feel.
-                </p>
+                <p>Bright branding, natural taste, organic fruit feel, and refreshing colorful presentation.</p>
               </div>
             </article>
             <article class="faq-item">
-              <button class="faq-question" type="button">Which juices get the most attention?</button>
+              <button class="faq-question" type="button">Which juices are most loved?</button>
               <div class="faq-answer">
-                <p>
-                  Mint Lime, Lime Twist, and Tender Coconut are the names that come up most often in
-                  reviews and recommendations.
-                </p>
+                <p>Mint Lime, Lime Twist, and Tender Coconut are the biggest favorites right now.</p>
               </div>
             </article>
             <article class="faq-item">
-              <button class="faq-question" type="button">Can the current placeholder images be changed later?</button>
+              <button class="faq-question" type="button">Is the website mobile friendly?</button>
               <div class="faq-answer">
-                <p>
-                  Yes. The layout is intentionally built so you can swap product photos and campaign
-                  images without rebuilding the website.
-                </p>
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" type="button">Does the bottle move with the cursor?</button>
-              <div class="faq-answer">
-                <p>
-                  Yes. The home hero includes a cursor-follow parallax effect on desktop to give the
-                  bottle a more premium interactive feel.
-                </p>
+                <p>Yes. Everything is rebuilt to stay colorful, centered, and smooth on mobile too.</p>
               </div>
             </article>
           </div>
@@ -258,27 +187,22 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <img src="assets/qzee-logo.jpg" alt="Qzee Drinks footer logo" />
-            <p>Natural taste, organic fruit quality, and a cleaner premium juice identity from Mangalore.</p>
+            <p>Fun fruit refreshment with bright natural energy from Mangalore.</p>
           </div>
           <div class="footer-map-card">
-            <span>Visit us</span>
+            <span>Location</span>
             <strong>Mangalore, Karnataka</strong>
-            <p>Fresh juice brand rooted in organic fruits, local energy, and premium presentation.</p>
-            <div class="footer-map">
-              <div class="footer-map-pin"></div>
-              <div class="footer-map-line line-one"></div>
-              <div class="footer-map-line line-two"></div>
-            </div>
+            <p>Fresh juice vibes, colorful branding, and local fruit energy.</p>
+            <div class="footer-map"><div class="footer-map-pin"></div></div>
           </div>
           <div class="footer-links-group">
             <span>Quick links</span>
             <div class="footer-links">
               <a href="index.html">Home</a>
-              <a href="about.html">About Us</a>
+              <a href="about.html">About</a>
               <a href="products.html">Products</a>
               <a href="contact.html">Contact</a>
               <a href="contact.html">Careers</a>
-              <a href="contact.html">Retail Inquiry</a>
             </div>
           </div>
           <div class="footer-contact">
@@ -286,7 +210,7 @@
             <a href="tel:+919876543210">+91 98765 43210</a>
             <a href="mailto:hello@qzeedrinks.com">hello@qzeedrinks.com</a>
             <p>Mon - Sat / 10:00 AM - 7:00 PM</p>
-            <small>© 2026 Qzee Drinks. Nature in every squeeze.</small>
+            <small>© 2026 Qzee Drinks</small>
           </div>
         </div>
       </footer>

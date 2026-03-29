@@ -3,123 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Qzee Drinks</title>
-    <meta
-      name="description"
-      content="Get in touch with Qzee Drinks in Mangalore, India for inquiries, partnerships, and orders."
-    />
+    <title>Contact | Qzee Drinks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="contact">
-    <div class="page-noise"></div>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="index.html" aria-label="Qzee Drinks home">
-          <img src="assets/qzee-logo.jpg" alt="Qzee Drinks logo" />
-        </a>
-
-        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
+        <a class="brand" href="index.html"><img src="assets/qzee-logo.jpg" alt="Qzee Drinks logo" /></a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         <nav class="site-nav">
           <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
+          <a href="about.html">About</a>
           <a href="products.html">Products</a>
           <a class="active" href="contact.html">Contact</a>
         </nav>
       </header>
 
       <main>
-        <section class="page-hero centered-hero reveal">
-          <p class="eyebrow">Contact</p>
-          <h1>Let the next conversation start with freshness.</h1>
-          <p>
-            Reach out for product inquiries, reseller opportunities, local distribution, or future
-            collaborations. You can replace the placeholder details any time later.
-          </p>
+        <section class="page-hero fun-hero reveal">
+          <div class="fruit-deco deco-berry"></div>
+          <div class="fruit-deco deco-mint"></div>
+          <div class="hero-copy centered-copy">
+            <p class="eyebrow">Contact</p>
+            <h1>Let’s talk fruit, flavor, and fun.</h1>
+            <p class="hero-text">Reach Qzee for orders, retail interest, and partnerships from Mangalore.</p>
+          </div>
         </section>
 
-        <section class="content-block reveal">
-          <div class="contact-scene">
-            <article class="contact-panel">
-              <p class="eyebrow">Qzee Drinks</p>
-              <h2>Mangalore, India</h2>
-              <p class="contact-lead">
-                A modern juice brand built around organic fruits, natural taste, and premium fruit
-                refreshment.
-              </p>
-
-              <div class="contact-details">
-                <div>
-                  <span>Phone</span>
-                  <strong>+91 98765 43210</strong>
-                </div>
-                <div>
-                  <span>Email</span>
-                  <strong>hello@qzeedrinks.com</strong>
-                </div>
-                <div>
-                  <span>Address</span>
-                  <strong>Mangalore, Karnataka, India</strong>
-                </div>
-                <div>
-                  <span>Hours</span>
-                  <strong>Mon - Sat / 10:00 AM - 7:00 PM</strong>
-                </div>
-              </div>
-
-              <div class="location-card">
-                <div class="map-dot"></div>
-                <div>
-                  <span>Serving from</span>
-                  <strong>Mangalore</strong>
-                  <p>Ideal for local inquiries today and a broader delivery story later.</p>
-                </div>
-              </div>
+        <section class="section reveal">
+          <div class="contact-grid">
+            <article class="feature-card bright-yellow">
+              <h3>Mangalore, India</h3>
+              <p>+91 98765 43210</p>
+              <p>hello@qzeedrinks.com</p>
             </article>
 
-            <form class="message-panel" id="contact-form">
-              <div class="message-topbar">
-                <span class="message-pill"></span>
-                <span class="message-pill"></span>
-                <span class="message-pill"></span>
-              </div>
-
-              <div class="field-grid">
-                <label>
-                  Full Name
-                  <input type="text" name="name" placeholder="Your full name" required />
-                </label>
-                <label>
-                  Phone Number
-                  <input type="tel" name="phone" placeholder="Your phone number" required />
-                </label>
-              </div>
-
+            <form class="contact-form feature-card bright-pink" id="contact-form">
               <label>
-                Email Address
-                <input type="email" name="email" placeholder="Your email address" required />
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
               </label>
-
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="Your phone" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Your email" required />
+              </label>
               <label>
                 Message
-                <textarea
-                  name="message"
-                  rows="8"
-                  placeholder="Tell us what you would like to discuss"
-                  required
-                ></textarea>
+                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
               </label>
-
               <button class="button button-primary" type="submit">Send Message</button>
               <p class="form-status" id="form-status" aria-live="polite"></p>
             </form>
@@ -129,42 +70,13 @@
 
       <footer class="site-footer">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <img src="assets/qzee-logo.jpg" alt="Qzee Drinks footer logo" />
-            <p>Clean contact flow with placeholders you can update once final business details are ready.</p>
-          </div>
-          <div class="footer-map-card">
-            <span>Visit us</span>
-            <strong>Mangalore, Karnataka</strong>
-            <p>Fresh juice brand rooted in organic fruits, local energy, and premium presentation.</p>
-            <div class="footer-map">
-              <div class="footer-map-pin"></div>
-              <div class="footer-map-line line-one"></div>
-              <div class="footer-map-line line-two"></div>
-            </div>
-          </div>
-          <div class="footer-links-group">
-            <span>Quick links</span>
-            <div class="footer-links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About Us</a>
-              <a href="products.html">Products</a>
-              <a href="contact.html">Contact</a>
-              <a href="contact.html">Careers</a>
-              <a href="contact.html">Retail Inquiry</a>
-            </div>
-          </div>
-          <div class="footer-contact">
-            <span>Contact</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
-            <a href="mailto:hello@qzeedrinks.com">hello@qzeedrinks.com</a>
-            <p>Mon - Sat / 10:00 AM - 7:00 PM</p>
-            <small>© 2026 Qzee Drinks. Nature in every squeeze.</small>
-          </div>
+          <div class="footer-brand"><img src="assets/qzee-logo.jpg" alt="Qzee Drinks footer logo" /><p>Fun fruit refreshment with bright natural energy from Mangalore.</p></div>
+          <div class="footer-map-card"><span>Location</span><strong>Mangalore, Karnataka</strong><p>Fresh juice vibes, colorful branding, and local fruit energy.</p><div class="footer-map"><div class="footer-map-pin"></div></div></div>
+          <div class="footer-links-group"><span>Quick links</span><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a><a href="contact.html">Careers</a></div></div>
+          <div class="footer-contact"><span>Contact</span><a href="tel:+919876543210">+91 98765 43210</a><a href="mailto:hello@qzeedrinks.com">hello@qzeedrinks.com</a><p>Mon - Sat / 10:00 AM - 7:00 PM</p><small>© 2026 Qzee Drinks</small></div>
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
