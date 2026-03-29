@@ -686,6 +686,11 @@ h3 {
     text-align: center;
   }
 
+  .hero-home {
+    min-height: auto;
+    gap: 12px;
+  }
+
   .hero-copy,
   .centered-copy,
   .page-hero,
@@ -715,28 +720,32 @@ h3 {
   }
 
   .hero-logo-badge {
-    width: 180px;
-    top: 10px;
+    width: 150px;
+    top: 0;
   }
 
   .hero-art {
-    min-height: 300px;
+    min-height: 180px;
+  }
+
+  .hero-bottle-pair {
+    inset: 78px 0 0;
   }
 
   .hero-bottle {
-    width: 118px;
+    width: 90px;
   }
 
   .hero-bottle.bottle-left {
-    left: 23%;
+    left: 27%;
   }
 
   .hero-bottle.bottle-right {
-    right: 23%;
+    right: 27%;
   }
 
   .section {
-    padding-top: 36px;
+    padding-top: 24px;
   }
 
   .section-title h2 {
@@ -745,6 +754,7 @@ h3 {
 
   .juice-grid {
     gap: 16px;
+    margin-top: 6px;
   }
 
   .juice-card {
