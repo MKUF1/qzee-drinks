@@ -1688,6 +1688,10 @@ h3,
     padding-top: 12px;
   }
 
+  main {
+    padding-top: 22px;
+  }
+
   .site-header {
     padding: 12px 14px;
     border-radius: 28px;
@@ -1749,6 +1753,26 @@ h3,
     text-align: center;
   }
 
+  .hero-copy,
+  .page-hero,
+  .about-hero-copy,
+  .section-head,
+  .product-hero-copy,
+  .product-hero-sellers,
+  .split-heading,
+  .contact-panel,
+  .message-panel,
+  .footer-brand,
+  .footer-map-card,
+  .footer-links-group,
+  .footer-contact {
+    justify-items: center;
+  }
+
+  .content-block {
+    padding-top: 40px;
+  }
+
   .hero-copy h1,
   .page-hero h1,
   .about-hero-copy h1,
@@ -1760,38 +1784,69 @@ h3,
     max-width: none;
   }
 
+  .hero-body,
+  .page-hero p:last-child,
+  .about-hero-copy p:last-child,
+  .product-hero-copy p:last-child,
+  .split-heading p:last-child,
+  .contact-lead,
+  .footer-brand p,
+  .footer-map-card p,
+  .footer-contact p,
+  .footer-contact small {
+    max-width: 32ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-actions,
+  .hero-metrics,
+  .footer-links {
+    justify-content: center;
+  }
+
+  .hero-metrics {
+    gap: 10px;
+  }
+
+  .hero-metrics article {
+    min-width: 112px;
+    padding: 12px 14px;
+  }
+
   .hero-stage {
-    min-height: 500px;
+    min-height: 390px;
   }
 
   .stage-panel-back {
-    inset: 8% 3% 8% 6%;
+    inset: 10% 5% 10% 8%;
   }
 
   .stage-panel-front {
-    inset: 12% 8% 8% 4%;
+    inset: 14% 10% 10% 6%;
   }
 
   .hero-note {
-    width: 174px;
-    padding: 14px;
+    width: 142px;
+    padding: 12px;
   }
 
   .hero-note strong {
-    font-size: 1.45rem;
+    font-size: 1.18rem;
   }
 
   .note-top {
-    left: 2%;
+    left: 4%;
   }
 
   .note-bottom {
-    right: 2%;
-    bottom: 8%;
+    right: 4%;
+    bottom: 10%;
   }
 
   .bottle-stage {
-    width: min(260px, 62%);
+    width: min(210px, 56%);
   }
 
   .trust-layout,
@@ -1809,7 +1864,7 @@ h3,
   }
 
   .about-hero-photo {
-    min-height: 400px;
+    min-height: 320px;
   }
 
   .about-hero-logo {
@@ -1818,17 +1873,29 @@ h3,
   }
 
   .about-shop-scene {
-    inset: 28px 24px 24px;
+    inset: 22px 18px 18px;
   }
 
   .shop-signboard {
-    width: min(220px, 72%);
-    height: 92px;
+    width: min(180px, 68%);
+    height: 74px;
   }
 
   .shop-window {
-    width: 86px;
-    height: 112px;
+    width: 64px;
+    height: 90px;
+  }
+
+  .shop-counter {
+    left: 16px;
+    right: 16px;
+    height: 72px;
+  }
+
+  .shop-plant {
+    width: 50px;
+    height: 76px;
+    bottom: 66px;
   }
 
   .product-tile.tall,
@@ -1838,12 +1905,55 @@ h3,
   }
 
   .product-bottle-wrap {
-    width: 78px;
-    height: 124px;
+    width: 68px;
+    height: 108px;
+    top: 14px;
+    right: 14px;
   }
 
   .product-bottle {
-    max-height: 108px;
+    max-height: 92px;
+  }
+
+  .product-tile {
+    min-height: 200px;
+    padding: 20px;
+  }
+
+  .hero-seller-pair {
+    min-height: 220px;
+  }
+
+  .hero-seller-bottle {
+    width: 92px;
+  }
+
+  .bottle-left {
+    left: 18%;
+  }
+
+  .bottle-right {
+    right: 18%;
+  }
+
+  .hero-seller-copy h3,
+  .seller-copy h3,
+  .organic-panel h3,
+  .difference-card h3,
+  .owner-card h3,
+  .trust-card h3 {
+    font-size: 2rem;
+  }
+
+  .review-panel,
+  .reason-card,
+  .faq-item,
+  .owner-card,
+  .difference-card,
+  .organic-panel,
+  .contact-panel,
+  .message-panel {
+    padding: 22px;
   }
 
   .footer-grid {
