@@ -1780,7 +1780,7 @@ h3,
   .section-head h2,
   .split-heading h2,
   .contact-panel h2 {
-    font-size: clamp(2.45rem, 10vw, 3.9rem);
+    font-size: clamp(2.1rem, 8vw, 3.2rem);
     max-width: none;
   }
 
@@ -1798,6 +1798,8 @@ h3,
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.72;
   }
 
   .hero-actions,
@@ -1819,7 +1821,7 @@ h3,
     min-height: 390px;
     grid-row: 1;
     grid-column: 1;
-    opacity: 0.28;
+    opacity: 0.08;
     z-index: 1;
   }
 
@@ -1834,10 +1836,11 @@ h3,
   .hero-note {
     width: 142px;
     padding: 12px;
+    opacity: 0.45;
   }
 
   .hero-note strong {
-    font-size: 1.18rem;
+    font-size: 1rem;
   }
 
   .note-top {
@@ -1859,6 +1862,41 @@ h3,
     position: relative;
     z-index: 2;
     padding: 34px 18px 24px;
+  }
+
+  .hero-copy .eyebrow,
+  .page-hero .eyebrow,
+  .about-hero-copy .eyebrow,
+  .product-hero-copy .eyebrow,
+  .section-head .eyebrow,
+  .contact-panel .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  .hero-actions .button,
+  .message-panel .button,
+  .contact-form .button {
+    min-height: 48px;
+    padding: 0 22px;
+    font-size: 0.95rem;
+  }
+
+  .hero-metrics strong,
+  .reason-card strong {
+    font-size: 1.7rem;
+  }
+
+  .hero-metrics span,
+  .reason-card span,
+  .trust-card p,
+  .review-panel p,
+  .faq-answer p,
+  .owner-card p,
+  .difference-card p,
+  .organic-panel p,
+  .hero-seller-copy p {
+    font-size: 0.95rem;
   }
 
   .trust-layout,
