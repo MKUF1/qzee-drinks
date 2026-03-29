@@ -1821,7 +1821,7 @@ h3,
     min-height: 390px;
     grid-row: 1;
     grid-column: 1;
-    opacity: 0.05;
+    opacity: 0.12;
     z-index: 1;
   }
 
@@ -1857,8 +1857,8 @@ h3,
   }
 
   .bottle-stage img {
-    opacity: 0.22;
-    filter: drop-shadow(0 12px 24px rgba(24, 49, 39, 0.1));
+    opacity: 0.42;
+    filter: drop-shadow(0 14px 28px rgba(24, 49, 39, 0.14));
   }
 
   .hero-copy {
