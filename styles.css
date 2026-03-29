@@ -169,6 +169,7 @@ main {
   border-radius: 50%;
   filter: blur(0.5px);
   animation: floaty 6s ease-in-out infinite;
+  z-index: 0;
 }
 
 .deco-lime {
@@ -266,6 +267,13 @@ h3 {
 .hero-art {
   position: relative;
   min-height: 460px;
+  z-index: 1;
+}
+
+.hero-copy,
+.centered-copy {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-logo-badge {
