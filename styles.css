@@ -1914,18 +1914,18 @@ h3,
   .mobile-bottle {
     position: absolute;
     bottom: 10px;
-    width: 84px;
+    width: 68px;
     opacity: 0.95;
     filter: drop-shadow(0 16px 24px rgba(24, 49, 39, 0.16));
   }
 
   .mobile-bottle.bottle-left {
-    left: 48px;
+    left: 56px;
     transform: rotate(-14deg);
   }
 
   .mobile-bottle.bottle-right {
-    right: 48px;
+    right: 56px;
     transform: rotate(14deg);
   }
 
