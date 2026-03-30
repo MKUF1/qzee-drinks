@@ -266,7 +266,7 @@ h3 {
 
 .hero-art {
   position: relative;
-  min-height: 520px;
+  min-height: 500px;
   z-index: 1;
 }
 
@@ -289,24 +289,24 @@ h3 {
 
 .hero-bottle-pair {
   position: absolute;
-  inset: 170px 0 0;
+  inset: 110px 0 18px;
 }
 
 .hero-bottle {
   position: absolute;
   bottom: 0;
-  width: 170px;
+  width: 126px;
   filter: drop-shadow(0 24px 40px rgba(36, 52, 39, 0.18));
   transition: transform 220ms ease;
 }
 
 .hero-bottle.bottle-left {
-  left: 22%;
+  left: 28%;
   transform: rotate(-13deg);
 }
 
 .hero-bottle.bottle-right {
-  right: 22%;
+  right: 28%;
   transform: rotate(13deg);
 }
 
@@ -718,6 +718,10 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.98rem;
+  }
+
+  .hero-home .hero-text {
+    display: none;
   }
 
   .hero-logo-badge {
