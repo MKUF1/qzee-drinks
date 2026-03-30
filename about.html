@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -15,12 +15,8 @@
   <body data-page="about">
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="index.html" aria-label="Qzee Drinks home">
-          <img src="assets/qzee-logo.jpg" alt="Qzee Drinks logo" />
-        </a>
-        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+        <a class="brand" href="index.html"><img src="assets/qzee-logo.jpg" alt="Qzee Drinks logo" /></a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         <nav class="site-nav">
           <a href="index.html">Home</a>
           <a class="active" href="about.html">About</a>
@@ -30,76 +26,41 @@
       </header>
 
       <main>
-        <section class="page-hero fun-hero reveal">
-          <div class="fruit-deco deco-lime"></div>
-          <div class="fruit-deco deco-orange"></div>
-          <div class="fruit-deco deco-berry"></div>
-          <div class="hero-copy centered-copy">
+        <section class="page-hero simple-hero reveal">
+          <div class="section-header centered">
             <p class="eyebrow">About Qzee</p>
-            <h1>Built to feel fruity, fun, and full of freshness.</h1>
-            <p class="hero-text">Qzee started with one simple idea: make juice feel exciting, colorful, and naturally refreshing.</p>
+            <h1>Built for bright refreshment and natural fruit joy.</h1>
+            <p class="hero-text">Qzee was started to create a juice brand that feels clean, fun, colorful, and easy to remember.</p>
           </div>
         </section>
 
         <section class="section reveal">
-          <div class="feature-row">
-            <article class="feature-card bright-green">
-              <h3>Founder</h3>
-              <p>Althaf Sanjari wanted a juice brand that feels fresh, eye-catching, and easy to trust.</p>
-            </article>
-            <article class="feature-card bright-orange">
-              <h3>Why Qzee</h3>
-              <p>The focus is organic fruit energy, natural taste, and a fun premium identity.</p>
-            </article>
-            <article class="feature-card bright-pink">
-              <h3>Our mood</h3>
-              <p>Bright colors, cheerful fruit vibes, and a bottle experience customers remember.</p>
-            </article>
+          <div class="card-grid three-col">
+            <article class="info-card tone-green"><h3>Founder</h3><p>Althaf Sanjari wanted a brand with better taste, better energy, and a better look.</p></article>
+            <article class="info-card tone-orange"><h3>Why it started</h3><p>To build a fruit brand people enjoy seeing, tasting, and coming back to.</p></article>
+            <article class="info-card tone-pink"><h3>What makes it different</h3><p>Bright identity, organic fruit feel, and a refreshing colorful personality.</p></article>
           </div>
         </section>
 
         <section class="section reveal">
-          <div class="section-title centered">
-            <p class="eyebrow">Organic fruit energy</p>
-            <h2>Fresh ingredients, colorful personality.</h2>
+          <div class="section-header centered">
+            <p class="eyebrow">Our Fruit Mood</p>
+            <h2>Every flavor begins with freshness.</h2>
           </div>
-          <div class="feature-row">
-            <article class="feature-card bright-yellow"><h3>Lime</h3><p>Sharp, cool, lively refreshment.</p></article>
-            <article class="feature-card bright-mint"><h3>Mint</h3><p>Fresh lift with a clean finish.</p></article>
-            <article class="feature-card bright-blue"><h3>Coconut</h3><p>Soft, smooth, tropical balance.</p></article>
+          <div class="card-grid three-col">
+            <article class="info-card tone-yellow"><h3>Lime</h3><p>Sharp, lively, cool.</p></article>
+            <article class="info-card tone-mint"><h3>Mint</h3><p>Fresh, clean, bright.</p></article>
+            <article class="info-card tone-blue"><h3>Coconut</h3><p>Smooth, soft, tropical.</p></article>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <img src="assets/qzee-logo.jpg" alt="Qzee Drinks footer logo" />
-            <p>Fun fruit refreshment with bright natural energy from Mangalore.</p>
-          </div>
-          <div class="footer-map-card">
-            <span>Location</span>
-            <strong>Mangalore, Karnataka</strong>
-            <p>Fresh juice vibes, colorful branding, and local fruit energy.</p>
-            <div class="footer-map"><div class="footer-map-pin"></div></div>
-          </div>
-          <div class="footer-links-group">
-            <span>Quick links</span>
-            <div class="footer-links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="products.html">Products</a>
-              <a href="contact.html">Contact</a>
-              <a href="contact.html">Careers</a>
-            </div>
-          </div>
-          <div class="footer-contact">
-            <span>Contact</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
-            <a href="mailto:hello@qzeedrinks.com">hello@qzeedrinks.com</a>
-            <p>Mon - Sat / 10:00 AM - 7:00 PM</p>
-            <small>© 2026 Qzee Drinks</small>
-          </div>
+          <div class="footer-brand"><img src="assets/qzee-logo.jpg" alt="Qzee Drinks logo" /><p>Fresh fruit energy with bright taste and a colorful brand mood.</p></div>
+          <div class="footer-block"><span>Location</span><strong>Mangalore, Karnataka</strong><p>Serving bright juice vibes from India.</p></div>
+          <div class="footer-block"><span>Quick Links</span><a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html">Contact</a><a href="contact.html">Careers</a></div>
+          <div class="footer-block"><span>Contact</span><a href="tel:+919876543210">+91 98765 43210</a><a href="mailto:hello@qzeedrinks.com">hello@qzeedrinks.com</a><p>Mon - Sat / 10:00 AM - 7:00 PM</p></div>
         </div>
       </footer>
     </div>
