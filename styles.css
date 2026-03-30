@@ -619,6 +619,7 @@ h3 {
 
   .hero-actions {
     justify-content: center;
+    margin-top: 190px;
   }
 }
 
@@ -721,15 +722,15 @@ h3 {
 
   .hero-logo-badge {
     width: 150px;
-    top: 0;
+    top: 10px;
   }
 
   .hero-art {
-    min-height: 180px;
+    min-height: 220px;
   }
 
   .hero-bottle-pair {
-    inset: 78px 0 0;
+    inset: 70px 0 0;
   }
 
   .hero-bottle {
@@ -742,6 +743,11 @@ h3 {
 
   .hero-bottle.bottle-right {
     right: 27%;
+  }
+
+  .hero-actions {
+    margin-top: 0;
+    justify-content: center;
   }
 
   .section {
