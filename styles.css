@@ -1270,10 +1270,15 @@ h3,
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0 20px;
+  padding: 8px 14px;
   border-radius: 999px;
-  color: #131313;
   background: linear-gradient(135deg, #ffea95, #e2ab1a);
+}
+
+.nasla-link img {
+  width: 90px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .nasla-hero {
@@ -1476,7 +1481,8 @@ h3,
   }
 
   .nasla-link {
-    width: 100%;
+    width: fit-content;
+    justify-self: center;
   }
 
   .nasla-hero {
