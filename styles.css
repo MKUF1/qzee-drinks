@@ -361,29 +361,6 @@ h3,
   transform: scale(1.02);
 }
 
-.hero-media-note {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 6px;
-  margin: 0 18px 18px;
-  padding: 16px 18px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.74);
-  backdrop-filter: blur(14px);
-  color: var(--text);
-}
-
-.hero-media-note strong {
-  font-family: "Syne", sans-serif;
-  font-size: 1.1rem;
-}
-
-.hero-media-note span {
-  color: var(--muted);
-  line-height: 1.55;
-}
-
 .section {
   padding-top: 44px;
 }
@@ -881,11 +858,6 @@ h3,
   .hero-media-surface {
     inset: 0;
     border-radius: 28px;
-  }
-
-  .hero-media-note {
-    margin: 0 14px 14px;
-    padding: 14px 16px;
   }
 
   .hero-actions {
