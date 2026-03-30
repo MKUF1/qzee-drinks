@@ -249,6 +249,13 @@ h3,
   line-height: 1.75;
 }
 
+.page-hero .hero-text,
+.simple-hero .hero-text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -393,6 +400,58 @@ h3,
 .contact-form {
   padding: 24px;
   border-radius: var(--radius-xl);
+}
+
+.founder-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+}
+
+.founder-visual,
+.founder-story {
+  height: 100%;
+}
+
+.founder-image {
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+}
+
+.founder-avatar {
+  width: 180px;
+  height: 180px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-family: "Syne", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, var(--purple), var(--pink), var(--orange));
+  box-shadow: 0 18px 40px rgba(126, 77, 255, 0.24);
+}
+
+.founder-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.founder-badges span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.founder-story {
+  display: grid;
+  gap: 14px;
 }
 
 .info-card p,
@@ -558,7 +617,8 @@ h3,
   .hero-home,
   .card-grid,
   .card-grid.two-col,
-  .footer-grid {
+  .footer-grid,
+  .founder-layout {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -639,7 +699,8 @@ h3,
   .juice-grid,
   .card-grid,
   .card-grid.two-col,
-  .footer-grid {
+  .footer-grid,
+  .founder-layout {
     grid-template-columns: 1fr;
   }
 
@@ -660,7 +721,8 @@ h3,
   .info-card,
   .faq-item,
   .footer-brand,
-  .footer-block {
+  .footer-block,
+  .founder-story {
     justify-items: center;
     text-align: center;
   }
