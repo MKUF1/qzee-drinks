@@ -5,6 +5,7 @@ const followTarget = document.querySelector("[data-follow-target]");
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 const bestSellerGrid = document.querySelector(".best-seller-grid");
+const homeJuiceCards = document.querySelectorAll('body[data-page="home"] .juice-grid .juice-card');
 
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
@@ -67,6 +68,23 @@ if (contactForm && formStatus) {
     contactForm.reset();
   });
 }
+
+homeJuiceCards.forEach((card) => {
+  card.setAttribute("role", "link");
+  card.setAttribute("tabindex", "0");
+
+  const openProducts = () => {
+    window.location.href = "products.html";
+  };
+
+  card.addEventListener("click", openProducts);
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openProducts();
+    }
+  });
+});
 
 if (bestSellerGrid) {
   const slides = Array.from(bestSellerGrid.querySelectorAll(".seller-card"));

@@ -1218,6 +1218,10 @@ h3,
     width: 64px;
   }
 
+  body[data-page="home"] .nasla-promo-card h3 {
+    color: #ffe18b;
+  }
+
 .info-card,
 .faq-item,
 .contact-form {
