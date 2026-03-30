@@ -4,6 +4,7 @@ const parallaxArea = document.querySelector("[data-parallax-area]");
 const followTarget = document.querySelector("[data-follow-target]");
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
+const bestSellerGrid = document.querySelector(".best-seller-grid");
 
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
@@ -65,4 +66,38 @@ if (contactForm && formStatus) {
     formStatus.textContent = "Message ready. Connect this form to your email or WhatsApp later.";
     contactForm.reset();
   });
+}
+
+if (bestSellerGrid) {
+  const slides = Array.from(bestSellerGrid.querySelectorAll(".seller-card"));
+  let activeIndex = 0;
+  let autoSlideId;
+
+  const goToSlide = (index) => {
+    const nextSlide = slides[index];
+    if (!nextSlide) return;
+
+    bestSellerGrid.scrollTo({
+      left: nextSlide.offsetLeft - bestSellerGrid.offsetLeft,
+      behavior: "smooth"
+    });
+  };
+
+  const startAutoSlide = () => {
+    if (slides.length < 2) return;
+    clearInterval(autoSlideId);
+    autoSlideId = window.setInterval(() => {
+      activeIndex = (activeIndex + 1) % slides.length;
+      goToSlide(activeIndex);
+    }, 2600);
+  };
+
+  const stopAutoSlide = () => clearInterval(autoSlideId);
+
+  startAutoSlide();
+
+  bestSellerGrid.addEventListener("mouseenter", stopAutoSlide);
+  bestSellerGrid.addEventListener("mouseleave", startAutoSlide);
+  bestSellerGrid.addEventListener("touchstart", stopAutoSlide, { passive: true });
+  bestSellerGrid.addEventListener("touchend", startAutoSlide, { passive: true });
 }
