@@ -651,6 +651,10 @@ h3,
     min-height: auto;
   }
 
+  .hero-home {
+    grid-template-columns: 1fr;
+  }
+
   .hero-copy,
   .section-header,
   .info-card,
@@ -675,6 +679,7 @@ h3,
 
   .hero-visual {
     min-height: 170px;
+    order: 2;
   }
 
   .hero-bottles {
@@ -696,6 +701,44 @@ h3,
   .hero-actions {
     justify-content: center;
     margin-top: 6px;
+    order: 3;
+  }
+
+  .best-seller-grid {
+    position: relative;
+    gap: 0;
+  }
+
+  .best-seller-grid .seller-card {
+    min-height: 240px;
+  }
+
+  .best-seller-grid .seller-card:first-child {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    margin-right: 36px;
+    background: linear-gradient(135deg, rgba(186, 255, 117, 0.34), rgba(255,255,255,0.64));
+  }
+
+  .best-seller-grid .seller-card:last-child {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    margin-left: 36px;
+    background: linear-gradient(135deg, rgba(255, 240, 119, 0.34), rgba(255,255,255,0.64));
+  }
+
+  .best-seller-grid .seller-card h3 {
+    margin-top: 10px;
+  }
+
+  .best-seller-grid .seller-card:first-child .seller-bottle {
+    transform: rotate(-12deg);
+  }
+
+  .best-seller-grid .seller-card:last-child .seller-bottle {
+    transform: rotate(12deg);
   }
 
   .section {
