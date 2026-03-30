@@ -126,6 +126,29 @@ textarea {
   box-shadow: 0 12px 24px rgba(126, 77, 255, 0.22);
 }
 
+.nasla-link-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  min-height: 48px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffef9b, #d6a01f 72%, #fff1b8);
+  border: 1px solid rgba(214, 160, 31, 0.34);
+  box-shadow: 0 12px 24px rgba(214, 160, 31, 0.16);
+}
+
+.nasla-link-nav img {
+  width: 88px;
+  max-width: 100%;
+}
+
+.site-nav a.nasla-link-nav:hover,
+.site-nav a.nasla-link-nav.active {
+  background: linear-gradient(135deg, #fff2a6, #dda31e 72%, #fff5c0);
+}
+
 .site-nav a.distributor-link:hover,
 .site-nav a.distributor-link.active {
   color: white !important;
@@ -446,23 +469,46 @@ h3,
   z-index: 1;
   display: flex;
   justify-content: center;
+  align-items: end;
   gap: 14px;
   margin-bottom: 18px;
 }
 
-.juice-bottle-row img {
+.juice-bottle-unit {
+  display: grid;
+  justify-items: center;
+  align-content: end;
+  gap: 6px;
+}
+
+.juice-bottle-unit img {
   width: 76px;
   filter: drop-shadow(0 16px 24px rgba(27, 47, 44, 0.16));
   transition: transform 220ms ease, filter 220ms ease;
 }
 
-.juice-card:hover .juice-bottle-row img,
-.juice-card:active .juice-bottle-row img {
+.juice-bottle-unit.small img {
+  width: 54px;
+}
+
+.juice-bottle-unit span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(28, 47, 44, 0.08);
+}
+
+.juice-card:hover .juice-bottle-unit img,
+.juice-card:active .juice-bottle-unit img {
   transform: translateY(-8px) rotate(-7deg);
 }
 
-.juice-card:hover .juice-bottle-row img:last-child,
-.juice-card:active .juice-bottle-row img:last-child {
+.juice-card:hover .juice-bottle-unit:last-child img,
+.juice-card:active .juice-bottle-unit:last-child img {
   transform: translateY(-8px) rotate(7deg);
 }
 
@@ -470,6 +516,28 @@ h3,
   position: relative;
   z-index: 1;
   font-size: 1.7rem;
+}
+
+.nasla-promo-card {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 222, 122, 0.2), transparent 20%),
+    radial-gradient(circle at 84% 82%, rgba(255, 193, 69, 0.18), transparent 24%),
+    linear-gradient(180deg, rgba(18, 18, 18, 0.96), rgba(8, 8, 8, 0.98)) !important;
+  border: 1px solid rgba(243, 207, 104, 0.24);
+  box-shadow: 0 22px 36px rgba(0, 0, 0, 0.28);
+}
+
+.nasla-promo-card::before {
+  background: radial-gradient(circle, rgba(255, 214, 102, 0.24), transparent 70%);
+}
+
+.nasla-promo-card h3 {
+  color: #ffe18b;
+}
+
+.nasla-promo-card .juice-bottle-row img {
+  width: 92px;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45));
 }
 
 .card-grid {
@@ -859,11 +927,29 @@ h3,
     box-shadow: 0 12px 24px rgba(126, 77, 255, 0.22);
   }
 
+  .nasla-link-nav {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    min-height: 54px;
+    padding: 10px 16px;
+  }
+
+  .nasla-link-nav img {
+    width: 94px;
+  }
+
   .site-nav a.distributor-link:hover,
   .site-nav a.distributor-link.active {
     justify-content: center;
     color: white !important;
     background: linear-gradient(135deg, var(--purple), var(--orange));
+  }
+
+  .site-nav a.nasla-link-nav:hover,
+  .site-nav a.nasla-link-nav.active {
+    color: #ffe395 !important;
+    background: linear-gradient(135deg, #090909, #211b10 72%, #38280d);
   }
 
   .hero-home,
@@ -1014,10 +1100,20 @@ h3,
     bottom: 10px;
     margin-bottom: 0;
     z-index: 2;
+    gap: 8px;
   }
 
-  body[data-page="home"] .juice-bottle-row img {
-    width: 58px;
+  body[data-page="home"] .juice-bottle-unit img {
+    width: 52px;
+  }
+
+  body[data-page="home"] .juice-bottle-unit.small img {
+    width: 38px;
+  }
+
+  body[data-page="home"] .juice-bottle-unit span {
+    font-size: 0.55rem;
+    padding: 4px 7px;
   }
 
   body[data-page="home"] .juice-card h3 {
@@ -1028,9 +1124,325 @@ h3,
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   }
 
-  .info-card,
-  .faq-item,
-  .contact-form {
-    padding: 20px;
+  body[data-page="home"] .nasla-promo-card .juice-bottle-row img {
+    width: 54px;
+  }
+
+.info-card,
+.faq-item,
+.contact-form {
+  padding: 20px;
+}
+}
+
+.nasla-page {
+  color: #f8f2df;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255, 215, 95, 0.2), transparent 20%),
+    radial-gradient(circle at 82% 18%, rgba(255, 197, 71, 0.18), transparent 22%),
+    linear-gradient(180deg, #060606 0%, #13100a 42%, #0b0b0b 100%);
+}
+
+.nasla-shell {
+  width: min(calc(100% - 32px), 1220px);
+  margin: 0 auto;
+  padding: 24px 0 42px;
+}
+
+.nasla-header,
+.nasla-hero,
+.nasla-card,
+.nasla-band {
+  border: 1px solid rgba(255, 210, 98, 0.18);
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.94), rgba(8, 8, 8, 0.96));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+}
+
+.nasla-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 22px;
+  border-radius: 999px;
+}
+
+.nasla-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nasla-brand-mark {
+  width: 154px;
+  min-height: 66px;
+  display: grid;
+  place-items: center;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffef9b, #d6a01f 72%, #fff1b8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 12px 28px rgba(214, 160, 31, 0.22);
+}
+
+.nasla-brand-mark img {
+  width: 100%;
+  max-width: 110px;
+}
+
+.nasla-brand strong,
+.nasla-link,
+.nasla-card h3,
+.nasla-band strong {
+  font-family: "Syne", sans-serif;
+}
+
+.nasla-brand p,
+.nasla-text,
+.nasla-card p,
+.nasla-band p {
+  color: rgba(248, 242, 223, 0.74);
+}
+
+.nasla-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  color: #131313;
+  background: linear-gradient(135deg, #ffea95, #e2ab1a);
+}
+
+.nasla-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 42px;
+  border-radius: 38px;
+  overflow: hidden;
+}
+
+.nasla-eyebrow {
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #f1c64b;
+}
+
+.nasla-hero h1,
+.nasla-section-head h2 {
+  font-family: "Syne", sans-serif;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+}
+
+.nasla-hero h1 {
+  max-width: 10ch;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+
+.nasla-text {
+  max-width: 42ch;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.nasla-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.nasla-points span {
+  padding: 12px 16px;
+  border-radius: 999px;
+  color: #fff7dc;
+  background: rgba(255, 211, 104, 0.12);
+  border: 1px solid rgba(255, 211, 104, 0.18);
+}
+
+.nasla-bottle-stage {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+}
+
+.nasla-halo {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255, 226, 130, 0.55), rgba(255, 194, 64, 0.16) 48%, transparent 70%);
+  filter: blur(8px);
+}
+
+.nasla-bottle-stage img {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 360px);
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.5));
+}
+
+.nasla-section {
+  padding-top: 34px;
+}
+
+.nasla-section-head {
+  margin-bottom: 18px;
+}
+
+.nasla-section-head h2 {
+  max-width: 13ch;
+  font-size: clamp(2.2rem, 4.8vw, 4rem);
+}
+
+.nasla-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.nasla-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nasla-card {
+  padding: 28px;
+  border-radius: 28px;
+}
+
+.nasla-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.55rem;
+  color: #ffe187;
+}
+
+.nasla-band {
+  margin-top: 34px;
+  padding: 34px;
+  border-radius: 34px;
+}
+
+.nasla-band-copy {
+  margin-bottom: 22px;
+}
+
+.nasla-band-copy h2 {
+  max-width: 13ch;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.nasla-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.nasla-benefits article {
+  padding: 22px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 214, 102, 0.12), rgba(255, 214, 102, 0.04));
+  border: 1px solid rgba(255, 214, 102, 0.14);
+}
+
+.nasla-benefits strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffe187;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 760px) {
+  .nasla-shell {
+    width: min(calc(100% - 18px), 100%);
+    padding: 14px 0 26px;
+  }
+
+  .nasla-header,
+  .nasla-hero,
+  .nasla-band,
+  .nasla-card {
+    border-radius: 26px;
+  }
+
+  .nasla-header,
+  .nasla-hero {
+    padding: 18px;
+  }
+
+  .nasla-brand-mark {
+    width: 132px;
+    min-height: 58px;
+    padding: 8px 14px;
+  }
+
+  .nasla-brand-mark img {
+    max-width: 96px;
+  }
+
+  .nasla-header,
+  .nasla-hero,
+  .nasla-grid,
+  .nasla-grid.two,
+  .nasla-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .nasla-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nasla-link {
+    width: 100%;
+  }
+
+  .nasla-hero {
+    gap: 18px;
+  }
+
+  .nasla-copy,
+  .nasla-section-head,
+  .nasla-card,
+  .nasla-band-copy {
+    text-align: center;
+  }
+
+  .nasla-text,
+  .nasla-section-head h2,
+  .nasla-band-copy h2 {
+    max-width: none;
+  }
+
+  .nasla-points {
+    justify-content: center;
+  }
+
+  .nasla-bottle-stage {
+    min-height: 360px;
+  }
+
+  .nasla-halo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .nasla-bottle-stage img {
+    width: min(100%, 240px);
+  }
+
+  .nasla-band {
+    padding: 22px 18px;
   }
 }
