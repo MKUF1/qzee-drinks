@@ -335,10 +335,33 @@ h3,
   min-height: 460px;
 }
 
+.hero-bottles {
+  position: absolute;
+  inset: 126px 0 10px;
+}
+
+.hero-bottle {
+  position: absolute;
+  bottom: 0;
+  width: 148px;
+  filter: drop-shadow(0 22px 34px rgba(27, 47, 44, 0.16));
+  transition: transform 220ms ease;
+}
+
+.hero-bottle-left {
+  left: 24%;
+  transform: rotate(-13deg);
+}
+
+.hero-bottle-right {
+  right: 24%;
+  transform: rotate(13deg);
+}
+
 .hero-media-surface {
+  display: none;
   position: absolute;
   inset: 36px 22px 18px;
-  display: grid;
   align-content: end;
   border-radius: 36px;
   overflow: hidden;
@@ -581,8 +604,36 @@ h3,
   text-align: center;
 }
 
+.best-seller-shell {
+  padding: 32px;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 36px rgba(27, 47, 44, 0.08);
+}
+
+.best-seller-shell .section-header {
+  margin-bottom: 24px;
+}
+
+.best-seller-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 16px;
+  padding: 6px 6px 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
 .seller-card {
+  min-height: 420px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
   text-align: center;
+  scroll-snap-align: start;
 }
 
 .seller-bottle {
@@ -855,7 +906,12 @@ h3,
     margin-top: 10px;
   }
 
+  .hero-bottles {
+    display: none;
+  }
+
   .hero-media-surface {
+    display: grid;
     inset: 0;
     border-radius: 28px;
   }
@@ -871,40 +927,21 @@ h3,
   }
 
   .best-seller-grid {
-    position: relative;
-    gap: 0;
+    grid-auto-columns: 100%;
+    gap: 12px;
+    padding-bottom: 10px;
   }
 
   .best-seller-grid .seller-card {
-    min-height: 240px;
-  }
-
-  .best-seller-grid .seller-card:first-child {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 2;
-    margin-right: 36px;
-    background: linear-gradient(135deg, rgba(186, 255, 117, 0.34), rgba(255,255,255,0.64));
-  }
-
-  .best-seller-grid .seller-card:last-child {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 1;
-    margin-left: 36px;
-    background: linear-gradient(135deg, rgba(255, 240, 119, 0.34), rgba(255,255,255,0.64));
+    min-height: 270px;
   }
 
   .best-seller-grid .seller-card h3 {
     margin-top: 10px;
   }
 
-  .best-seller-grid .seller-card:first-child .seller-bottle {
-    transform: rotate(-12deg);
-  }
-
-  .best-seller-grid .seller-card:last-child .seller-bottle {
-    transform: rotate(12deg);
+  .best-seller-shell {
+    padding: 22px 16px;
   }
 
   .section {
