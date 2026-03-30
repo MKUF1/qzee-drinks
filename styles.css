@@ -266,7 +266,7 @@ h3 {
 
 .hero-art {
   position: relative;
-  min-height: 460px;
+  min-height: 520px;
   z-index: 1;
 }
 
@@ -289,24 +289,24 @@ h3 {
 
 .hero-bottle-pair {
   position: absolute;
-  inset: 120px 0 0;
+  inset: 170px 0 0;
 }
 
 .hero-bottle {
   position: absolute;
   bottom: 0;
-  width: 180px;
+  width: 170px;
   filter: drop-shadow(0 24px 40px rgba(36, 52, 39, 0.18));
   transition: transform 220ms ease;
 }
 
 .hero-bottle.bottle-left {
-  left: 24%;
+  left: 22%;
   transform: rotate(-13deg);
 }
 
 .hero-bottle.bottle-right {
-  right: 24%;
+  right: 22%;
   transform: rotate(13deg);
 }
 
@@ -726,23 +726,23 @@ h3 {
   }
 
   .hero-art {
-    min-height: 220px;
+    min-height: 180px;
   }
 
   .hero-bottle-pair {
-    inset: 70px 0 0;
+    inset: 88px 0 0;
   }
 
   .hero-bottle {
-    width: 90px;
+    width: 74px;
   }
 
   .hero-bottle.bottle-left {
-    left: 27%;
+    left: 28%;
   }
 
   .hero-bottle.bottle-right {
-    right: 27%;
+    right: 28%;
   }
 
   .hero-actions {
