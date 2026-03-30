@@ -784,24 +784,25 @@ h3,
   }
 
   .hero-visual {
-    min-height: 170px;
+    min-height: 230px;
     order: 2;
+    margin-top: 10px;
   }
 
   .hero-bottles {
-    inset: 62px 0 0;
+    inset: 108px 0 0;
   }
 
   .hero-bottle {
-    width: 74px;
+    width: 88px;
   }
 
   .hero-bottle-left {
-    left: 28%;
+    left: 24%;
   }
 
   .hero-bottle-right {
-    right: 28%;
+    right: 24%;
   }
 
   .hero-actions {
@@ -882,6 +883,9 @@ h3,
     padding: 14px;
     border-radius: 18px;
     text-align: left;
+    background:
+      radial-gradient(circle at top right, rgba(255, 255, 255, 0.48), transparent 26%),
+      linear-gradient(180deg, color-mix(in srgb, var(--card-color) 78%, white 22%), color-mix(in srgb, var(--card-color) 58%, white 42%));
   }
 
   body[data-page="home"] .juice-card::before {
@@ -889,18 +893,19 @@ h3,
     height: 120px;
     top: -24px;
     right: -18px;
+    background: radial-gradient(circle, color-mix(in srgb, var(--card-color) 88%, white 12%), transparent 70%);
   }
 
   body[data-page="home"] .juice-bottle-row {
     position: absolute;
     right: 8px;
-    bottom: 8px;
+    bottom: 2px;
     margin-bottom: 0;
     z-index: 2;
   }
 
   body[data-page="home"] .juice-bottle-row img {
-    width: 62px;
+    width: 70px;
   }
 
   body[data-page="home"] .juice-card h3 {
