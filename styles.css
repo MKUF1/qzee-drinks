@@ -109,6 +109,45 @@ textarea {
   color: var(--muted);
 }
 
+.distributor-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8px;
+  color: white !important;
+  background: linear-gradient(135deg, var(--purple), var(--orange));
+  box-shadow: 0 12px 24px rgba(126, 77, 255, 0.22);
+}
+
+.distributor-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.distributor-icon::before,
+.distributor-icon::after {
+  content: "";
+  position: absolute;
+  background: rgba(126, 77, 255, 0.85);
+}
+
+.distributor-icon::before {
+  left: 2px;
+  right: 2px;
+  top: 4px;
+  height: 2px;
+}
+
+.distributor-icon::after {
+  left: 5px;
+  top: 1px;
+  bottom: 1px;
+  width: 2px;
+}
+
 .site-nav a.active,
 .site-nav a:hover {
   color: var(--text);
@@ -693,6 +732,11 @@ h3,
 
   .site-nav a {
     text-align: center;
+  }
+
+  .distributor-link {
+    margin-left: 0;
+    justify-content: center;
   }
 
   .hero-home,
