@@ -1063,6 +1063,12 @@ h3,
     border-radius: 28px;
   }
 
+  .hero-media-image {
+    background-image:
+      linear-gradient(180deg, rgba(22, 34, 31, 0.04), rgba(22, 34, 31, 0.34)),
+      url("assets/hero-pic.jpg");
+  }
+
   .hero-actions {
     justify-content: center;
     margin-top: 6px;
@@ -1264,9 +1270,9 @@ h3,
 
 .nasla-brand {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  gap: 14px;
 }
 
 .nasla-brand-copy {
