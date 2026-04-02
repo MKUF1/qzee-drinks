@@ -872,6 +872,7 @@ h3,
 }
 
 .honeypot-field {
+  display: none !important;
   position: absolute;
   left: -9999px;
   opacity: 0;
