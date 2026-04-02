@@ -1066,7 +1066,7 @@ h3,
   .hero-media-image {
     background-image:
       linear-gradient(180deg, rgba(22, 34, 31, 0.04), rgba(22, 34, 31, 0.34)),
-      url("assets/hero-pic.jpg");
+      url("assets/home-mobile-hero.jpg");
   }
 
   .hero-actions {
