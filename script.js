@@ -52,7 +52,7 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 });
 
 if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", (event) => {
+  contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     const data = new FormData(contactForm);
     const required = ["name", "phone", "email", "message"].map((key) =>
@@ -64,8 +64,32 @@ if (contactForm && formStatus) {
       return;
     }
 
-    formStatus.textContent = "Message ready. Connect this form to your email or WhatsApp later.";
-    contactForm.reset();
+    if (String(data.get("_honey") || "").trim()) return;
+
+    const email = String(data.get("email") || "").trim();
+    data.append("_replyto", email);
+
+    formStatus.textContent = "Sending your message...";
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      formStatus.textContent = "Message sent successfully. We will reach you by email soon.";
+      contactForm.reset();
+    } catch (error) {
+      formStatus.textContent =
+        "We could not send your message right now. Please email us directly at Info@qzeedrinks.in.";
+    }
   });
 }
 

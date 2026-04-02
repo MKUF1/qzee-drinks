@@ -474,6 +474,11 @@ h3,
   margin-bottom: 18px;
 }
 
+.dual-bottle-card .juice-bottle-row {
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .juice-bottle-unit {
   display: grid;
   justify-items: center;
@@ -489,6 +494,14 @@ h3,
 
 .juice-bottle-unit.small img {
   width: 54px;
+}
+
+.dual-bottle-card .juice-bottle-unit img {
+  width: 66px;
+}
+
+.dual-bottle-card .juice-bottle-unit.small img {
+  width: 46px;
 }
 
 .juice-bottle-unit span {
@@ -516,6 +529,10 @@ h3,
   position: relative;
   z-index: 1;
   font-size: 1.7rem;
+}
+
+.dual-bottle-card h3 {
+  margin-top: 4px;
 }
 
 .juice-copy {
@@ -852,6 +869,13 @@ h3,
   border-radius: 16px;
   border: 1px solid rgba(28, 47, 44, 0.1);
   background: rgba(255, 255, 255, 0.74);
+}
+
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .form-status {
