@@ -487,21 +487,38 @@ h3,
 }
 
 .juice-bottle-unit img {
-  width: 76px;
+  --juice-scale: 1;
+  --juice-lift: 0px;
+  --juice-rotate: 0deg;
+  width: auto;
+  height: 138px;
+  max-width: 76px;
   filter: drop-shadow(0 16px 24px rgba(27, 47, 44, 0.16));
+  transform: translateY(var(--juice-lift)) rotate(var(--juice-rotate)) scale(var(--juice-scale));
+  transform-origin: center bottom;
   transition: transform 220ms ease, filter 220ms ease;
 }
 
 .juice-bottle-unit.small img {
-  width: 54px;
+  width: auto;
+  height: 102px;
+  max-width: 54px;
 }
 
 .dual-bottle-card .juice-bottle-unit img {
-  width: 66px;
+  width: auto;
+  height: 126px;
+  max-width: 66px;
 }
 
 .dual-bottle-card .juice-bottle-unit.small img {
-  width: 46px;
+  width: auto;
+  height: 90px;
+  max-width: 46px;
+}
+
+.bottle-boost {
+  --juice-scale: 1.34;
 }
 
 .juice-bottle-unit span {
@@ -517,12 +534,14 @@ h3,
 
 .juice-card:hover .juice-bottle-unit img,
 .juice-card:active .juice-bottle-unit img {
-  transform: translateY(-8px) rotate(-7deg);
+  --juice-lift: -8px;
+  --juice-rotate: -7deg;
 }
 
 .juice-card:hover .juice-bottle-unit:last-child img,
 .juice-card:active .juice-bottle-unit:last-child img {
-  transform: translateY(-8px) rotate(7deg);
+  --juice-lift: -8px;
+  --juice-rotate: 7deg;
 }
 
 .juice-card h3 {
@@ -1230,11 +1249,15 @@ h3,
   }
 
   body[data-page="products"] .juice-bottle-unit img {
-    width: 46px;
+    width: auto;
+    height: 78px;
+    max-width: 46px;
   }
 
   body[data-page="products"] .juice-bottle-unit.small img {
-    width: 30px;
+    width: auto;
+    height: 54px;
+    max-width: 30px;
   }
 
   body[data-page="products"] .juice-bottle-unit span {
@@ -1295,11 +1318,15 @@ h3,
   }
 
   body[data-page="home"] .juice-bottle-unit img {
-    width: 46px;
+    width: auto;
+    height: 74px;
+    max-width: 46px;
   }
 
   body[data-page="home"] .juice-bottle-unit.small img {
-    width: 30px;
+    width: auto;
+    height: 52px;
+    max-width: 30px;
   }
 
   body[data-page="home"] .juice-bottle-unit span {
