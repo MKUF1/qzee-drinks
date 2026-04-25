@@ -943,6 +943,7 @@ h3,
 }
 
 .footer-nasla-btn,
+.footer-distribution-btn,
 .footer-distributor-btn {
   display: inline-flex;
   align-items: center;
@@ -963,6 +964,42 @@ h3,
 .footer-nasla-btn img {
   width: 88px;
   max-width: 100%;
+}
+
+.footer-distribution-btn {
+  gap: 10px;
+  padding: 11px 18px;
+  color: white !important;
+  background: linear-gradient(135deg, #5eb8ff, #6f77ff 58%, #b2d5ff);
+  box-shadow: 0 12px 24px rgba(95, 145, 255, 0.22);
+}
+
+.footer-distribution-btn .distribution-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+}
+
+.footer-distribution-btn .distribution-icon::before,
+.footer-distribution-btn .distribution-icon::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.footer-distribution-btn .distribution-icon::before {
+  width: 8px;
+  height: 2px;
+}
+
+.footer-distribution-btn .distribution-icon::after {
+  width: 2px;
+  height: 8px;
 }
 
 .footer-distributor-btn {
