@@ -857,6 +857,10 @@ h3,
   background: linear-gradient(135deg, rgba(255, 176, 80, 0.22), rgba(255, 104, 160, 0.18), rgba(126, 77, 255, 0.14));
 }
 
+.facebook-link {
+  background: linear-gradient(135deg, rgba(111, 168, 255, 0.24), rgba(54, 104, 217, 0.18));
+}
+
 .whatsapp-link {
   background: linear-gradient(135deg, rgba(121, 255, 157, 0.24), rgba(79, 212, 111, 0.18));
 }
